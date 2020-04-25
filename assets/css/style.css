@@ -8,12 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
 }
-
-
 a {
   color: #f0950e;
 }
@@ -26,6 +25,26 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
+
+/*......Preloader........*/
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff710d;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+svg{
+  width: 100px;
+  height: 100px;
+}
+/*......End Preloader.......*/
+
 
 /*--------------------------------------------------------------
 # Back to top button
