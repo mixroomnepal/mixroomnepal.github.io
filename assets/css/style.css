@@ -399,7 +399,7 @@ margin-bottom: 20px;
 
 
 #hero .book-button {
-  background-color:#44000d;
+  background-color:#003545;
   color:white;
   padding: 5px 20px;
   font-weight: 500;
@@ -469,7 +469,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: #b2b2b2;
+  color:#ffbd69;
 }
 
 .section-title p {
@@ -482,7 +482,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   background : #121212;
-  color:#e5e5e5;
+  color:whitesmoke;
 
 }
 
@@ -497,7 +497,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: #b2b2b2;
+  color: #ffac41;
 }
 
 .about-title p {
@@ -610,90 +610,49 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Featured
---------------------------------------------------------------*/
-.featured {
-  background-image : url('../img/music_images/bg4.jpg');
-  background-size: cover;
-  opacity:1;
-  padding: 40px 0 20px 0;
-  
-}
-
-.featured .nav-tabs {
-  border: 0;
-}
-
-.featured .nav-link {
-  border: 0;
-  padding: 20px;
-  color: whitesmoke;
-  transition: 0.3s;
-}
-
-.featured .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.featured .nav-link:hover h4 {
-  color: #7cc576;
-}
-
-.featured .nav-link p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.featured .nav-link.active {
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.08);
-}
-
-.featured .nav-link.active h4 {
-  color: #7cc576;
-}
-
-.featured .tab-pane.active {
-  -webkit-animation: slide-down 0.5s ease-out;
-  animation: slide-down 0.5s ease-out;
-}
-
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-  background-image : url('../img/music_images/bg7.jpg');
+  background-image : linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/whyus.JPG');
   background-size: cover;
-  padding: 0;
+  width:100%;
+  
+}
+
+.whyus-video {
+  /* background-image: url("../assets/img/music_images/studio_images/thumbnail.JPG"); */
+  background-image : url("../img/music_images/studio_images/thumbnail.JPG");
+  box-shadow: 0 0 16px #ffac41;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
 }
 
 .why-us .content {
-  padding: 60px 100px 0 100px;
+  display:flex;
+  justify-content: left;
+  padding-top:40px;
+  
+}
+
+.whyus-list-arrow {
+  color:#ff710d;
+  font-size:30px !important;
+}
+
+.whyus-listitem {
+  font-size:20px;
+  padding-bottom: 25px;
+  color:#ffffff;
+  font-weight:400;
 }
 
 .why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
+  font-weight: 600;
+  font-size: 75px;
   color:#ffac41;
+  letter-spacing: 7px;
 }
 
 .why-us .content h4 {
@@ -707,6 +666,11 @@ section {
   color: whitesmoke;
 }
 
+.whyus-content {
+  padding: 30px 5px 5px 5px;
+  color:whitesmoke;
+}
+
 .why-us .video-box {
   background-size: cover;
   background-repeat: no-repeat;
@@ -715,79 +679,10 @@ section {
   position: relative;
 }
 
-.why-us .accordion-list {
-  padding: 0 100px 60px 100px;
-}
-
-.why-us .accordion-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.why-us .accordion-list li + li {
-  margin-top: 15px;
-}
-
-.why-us .accordion-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.why-us .accordion-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding-right: 30px;
-  outline: none;
-}
-
-.why-us .accordion-list span {
-  color: #7cc576;
-  font-weight: 600;
-  font-size: 18px;
-  padding-right: 10px;
-}
-
-.why-us .accordion-list i {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.why-us .accordion-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.why-us .accordion-list .icon-show {
-  display: none;
-}
-
-.why-us .accordion-list a.collapsed {
-  color: #343a40;
-}
-
-.why-us .accordion-list a.collapsed:hover {
-  color: #7cc576;
-}
-
-.why-us .accordion-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.why-us .accordion-list a.collapsed .icon-close {
-  display: none;
-}
-
 .why-us .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#7cc576 50%, rgba(124, 197, 118, 0.4) 52%);
+  background: radial-gradient(#ff710d 50%, rgba(236, 208, 115, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -828,7 +723,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(124, 197, 118, 0.7);
+  border: 5px solid rgba(243, 211, 122, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -857,19 +752,10 @@ section {
   border-radius: 0;
 }
 
-@media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 @media (max-width: 992px) {
   .why-us .content {
     padding-top: 30px;
-  }
-  .why-us .accordion-list {
-    padding-bottom: 30px;
   }
 }
 
@@ -895,6 +781,9 @@ section {
   }
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -914,7 +803,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: whitesmoke;
+  color: #ffbd69;
 }
 
 .portfolio-title p {
@@ -1083,7 +972,6 @@ section {
 .soundcloud {
   background: url("../img/music_images/studio_images/soundcloudbg.jpg") no-repeat;
   background-size: cover;
-
 }
 
 .soundcloud h2{
@@ -1092,7 +980,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: whitesmoke;
+  color: #ffbd69;
   text-align: center;
 }
 
@@ -1253,7 +1141,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: whitesmoke;
+  color: #ffbd69;
 }
 
 .team-title p {
@@ -1359,15 +1247,24 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+.faq{
+  background-image: url('../img/faq-background.jpg');
+  background-size:cover;
+  
+}
+
+
 .faq .faq-list {
   padding: 0;
   list-style: none;
+  
 }
 
 .faq .faq-list li {
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  
 }
 
 .faq .faq-list a {
@@ -1378,6 +1275,7 @@ section {
   line-height: 24px;
   font-weight: 400;
   padding-right: 25px;
+  
 }
 
 .faq .faq-list i {
@@ -1385,11 +1283,13 @@ section {
   position: absolute;
   right: 0;
   top: 0;
+  color:whitesmoke;
 }
 
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  color:whitesmoke;
 }
 
 .faq .faq-list .icon-show {
@@ -1397,11 +1297,11 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color:rgb(236, 233, 233);
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #7cc576;
+  color: #ffbd69;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1415,21 +1315,27 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background : #121212;
+  color:#ffbd69;
+}
+
 .contact .info {
   width: 100%;
   height: 100%;
-  background: #fff;
+  background : #121212;
+
   padding: 20px;
   border-radius: 5px;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #7cc576;
+  color:#ffbd69;
   float: left;
   width: 44px;
   height: 44px;
-  background: #eaf6e9;
+  background: #f7efd5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1442,14 +1348,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #151515;
+  color: whitesmoke;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #484848;
+  color: #f3f2f2;
 }
 
 .contact .info .email, .contact .info .phone {
@@ -1457,20 +1363,10 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #7cc576;
+  background: #ffbd69;
   color: #fff;
 }
 
-/* .contact .php-email-form {
-  width: 100%;
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-} */
 
 .contact .emailform .validate {
   display: none;
@@ -1496,26 +1392,40 @@ section {
 
 .contact .emailform {
   width: 100%;
-  background: #fff;
+  background : #121212;
   padding: 20px;
   border-radius: 5px;
+  color:whitesmoke;
 }
 
 .contact .emailform .form-group {
   padding-bottom: 8px;
 }
 
+.contact .emailform .form-group input{
+  background:#121212;
+  border: 1px solid grey;
+}
+
+.contact .emailform .form-group textarea{
+  background:#121212;
+  border: 0px;
+  border: 1px solid grey;
+}
+
+
 .sendEmail {
-  background: #7cc576;
+  background: #ffbd69;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: black;
   transition: 0.4s;
   border-radius: 4px;
+  font-weight:600;
 }
 
 .sendEmail:hover {
-  background: #61b959;
+  background: #ffa600;
 }
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -1564,6 +1474,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+
+
 .portfolio-details {
   padding-top: 0;
 }
