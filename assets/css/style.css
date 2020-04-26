@@ -1155,18 +1155,18 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: whitesmoke;
+  width: 120vw;
+  background:whitesmoke;
   padding: 15px 0;
-  text-align: center;
+  overflow: hidden;
 }
 
 .clients img {
-  width: 50%;
-  -webkit-filter: grayscale(100);
-  filter: grayscale(100);
+  width: 40%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
-  padding: 15px 0;
+  filter: grayscale(0%);
+
 }
 
 .clients img:hover {
@@ -1175,16 +1175,54 @@ section {
   transform: scale(1.2);
 }
 
+.marquee-content {
+  list-style: none;
+  height:100%;
+  display:flex;
+  animation:scrolling 15s linear infinite;
+  
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-180vw);}  /* -1 * (list item width) * (number of list items)      */
+}
+/* Repeat list items by client width divided by list item width...here 100/20 = 5 */
+
+.marquee-content li{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:20vw;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .clients img {
-    width: 40%;
+    width: 60%;
   }
 }
 
 @media (max-width: 575px) {
+
   .clients img {
-    width: 50%;
+    width: 70%;
   }
+
+  .marquee-content {
+    animation:scrolling 15s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-270vw);}  /* -1 * (list item width) * (number of list items)      */
+  }
+
+  .marquee-content li{
+    width:30vw;
+  }
+
 }
 
 /*--------------------------------------------------------------
