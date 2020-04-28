@@ -1,6 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
+  max-width: 100%;
+  overflow-x:hidden;
 }
 a {
   color: #f0950e;
@@ -1817,7 +1819,6 @@ p.news-content {
   }
 
   .news-from-database { 
-    width:115%;
     margin-left:-35px;
 
   }
