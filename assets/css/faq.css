@@ -1,0 +1,106 @@
+body {
+    font-family: Futura;
+    color: rgb(81,81,81);
+}
+
+a{
+    color:rgb(188,113,0);
+}
+
+/*..................................Questions........................................*/
+
+
+#faq-page{
+    background:rgb(248,248,248);
+    margin:auto;
+}
+
+.faq-page-title {
+    text-align: center;
+}
+.faq-page-title h2{
+    color: rgb(20, 20, 20);
+}
+.faq-page-title p{
+    color: rgb(153, 152, 152);
+}
+
+.faq-column {
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faq-column > div {
+    padding:20px 20px 15px 20px;
+}
+
+.faq-column h4{
+    font-size:25px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.faq-column p{
+    white-space: pre-wrap;
+    /* font-family: Helvetica, sans-serif; */
+    font-size:15px;
+    letter-spacing: 0.3px;
+    margin:2px;
+    color:rgb(188,113,0);
+    font-weight: 50;
+}
+
+/*..................................Answers........................................*/
+
+#answers-page {
+    background:rgb(255,255,255);
+    margin:auto;
+}
+
+.answers-title{
+    text-align: center;
+    padding:20px 10px 40px 10px;
+}
+
+.answer-box-container{
+    padding: 2px 0 10px 0;
+}
+
+.answer-box-content{
+    position:relative;
+    padding: 15px 13% 15px 13%;
+}
+
+div.answer-box-container > div.answer-box:nth-of-type(odd) {
+    background:rgb(248,248,248);
+  }
+
+.answer-box h5{
+    color: rgb(94,94,94);
+    font-size:16px;
+    font-weight:900;
+    text-transform: uppercase;
+}
+
+.answer-box span{
+    color:rgb(3, 112, 112);
+}
+
+.answer-box p, .answer-box li{
+    color:rgb(116, 114, 114);
+    font-weight: 300;
+    font-size:13px;
+}
+
+.place-location-faq{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.answer-category {
+    padding-bottom:30px;
+}

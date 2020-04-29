@@ -1,8 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
-  max-width: 100%;
-  overflow-x:hidden;
 }
 a {
   color: #f0950e;
@@ -394,10 +392,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity:0.95;
 }
 
-
-
 #hero .hero-container {
-  padding-top:50px;
   position: absolute;
   bottom: 0;
   min-width: 100%;
@@ -410,62 +405,69 @@ h1, h2, h3, h4, h5, h6 {
 
 video { 
   position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
 
-.hero-container2 {
-  
+.hero-container2 { 
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding:120px 0 0 0;
+  justify-content: center;
+  height:100%;
+  width:100%;
 }
-
-
 
 #hero .hero-logo {
 width:280px;
 height:auto;
-margin-bottom: 20px;
-
 }
 
-#hero h1 {
-  margin: 0 0 30px 0;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 56px;
-  color: #fff;
-}
 
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: Brush Script MT;
+  font-family: 'Aclonica';
+  font-weight:1500;
+  color:rgb(255, 113, 13);
+  /* letter-spacing: 0.5rem; */
 }
 
+#hero .book-buttons{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width:100%;
+  
+}
+
+#hero .book-buttons > div{
+  padding:10px 5px;
+}
 
 #hero .book-button {
   background-color:#003545;
-  color:white;
-  padding: 5px 20px;
+  color:white; 
   font-weight: 500;
   border-radius: 7px;
   font-size: 15px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  
+  font-family: "Montserrat", sans-serif; 
 }
 
 #hero .book-button:hover {
@@ -473,33 +475,12 @@ margin-bottom: 20px;
   color:black;
 }
 
-#hero .second-row {
-  padding-top:20px;
-}
-
-
-
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
 
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    line-height: 22px;
-  }
-}
-
-@media (max-width: 600px) {
-  #hero .hero-container {
-    padding:20px 10px;
-  }
-}
 
 
 
@@ -509,7 +490,6 @@ margin-bottom: 20px;
 section {
   padding: 60px 0;
   overflow: hidden;
- 
 }
 
 .section-bg {
@@ -538,9 +518,14 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+
 .about {
   background : #121212;
+  /* background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url('../img/music_images/studio_images/about_logo_black.jpg'); */
+  background-size:cover;
+  background-repeat:no-repeat;
   color:whitesmoke;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -555,12 +540,14 @@ section {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: #ffac41;
+  color: whitesmoke;
+  letter-spacing: 0.3rem;
 }
 
 .about-title p {
   margin-bottom: 0;
   color: #aeaeae;
+
 }
 
 .about .image {
@@ -568,112 +555,187 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-bottom: 10px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.about .content ul i {
-  font-size: 24px;
-  padding: 2px 6px 0 0;
-  color: #7cc576;
+.about .content p{
+  font-size:14px;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+
 }
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services {
-  /* background-image : linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/music_images/studio_images/main_carousel3.JPG'); */
+  /* background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url('../img/music_images/studio_images/about_logo_black.jpg'); */
   background: black;
-  background-size: cover;
-  color:#ffbd69;
+  /* background-size: cover; */
+  
+}
+
+.services-container {
+  opacity: 1;
+  height:100%;
+}
+
+.service-block{
+  display:flex;
+  border: 2px solid whitesmoke;
+  height:300px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-position:center center;
+  background-size:100% 100%;
+}
+
+.service-block-content{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.service-block h5{
+  /* font-family: 'Bookman'; */
+  font-weight:bold;
+  font-size:18px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color:white;
+}
+
+.service-block p{
+color:white;
+font-size:10px;
+display:none;
+
+
+}
+
+.service-block button{
+  border: 2px solid white;
+  background: none;
+  padding:7px 20px;
+  text-transform: capitalize;
+  color:white;
+  letter-spacing: 0.1rem;
+  display:none;
  
 }
 
 
-.services-link {
-  color:#ffac41;
-  text-decoration: none;
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
 }
-.services-link:hover {
-  text-decoration: solid;
-}
-
-
-.services-container {
-  opacity: 1;
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 
-.services-title {
-  text-align: center;
-  padding-bottom: 40px;
+
+
+/*-------------------------------EACH BLOCK-----------------------------*/
+
+.studio-block {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/about_logo_black.jpg');
+}
+.mixing-block{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/bg1.jpg');
+}
+.mastering-block{
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/services/bg2.jpg');
+}
+.academy-block{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/marshall.jpg');
+}
+.acoustic-block{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/main_carousel3.JPG');
+}
+.publishing-block{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/main_carousel5.jpg');
+}
+.film-block{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/services.jpg');
+}
+.IT-block{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/services/it.jpg');
 }
 
-.services-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  padding-bottom: 0;
-  color: #ffac41;
+
+
+
+
+
+
+
+/*-------------------------------HOVER EFFECTS-----------------------------*/
+.service-block:hover  p{
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
-.services-title p {
-  margin-bottom: 0;
-  color: white;
+.service-block:hover  button{
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
-.services-content {
-  padding: 10px 0;
+.service-block:hover{
+  cursor: pointer;
+  
 }
 
-.services .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
+.studio-block:hover{
+  background-image: linear-gradient(rgba(90, 9, 2, 0.5),rgb(90, 9, 2, 0.5)),url('../img/services/about_logo_black.jpg');
+  background-size: 110% 110%;
+}
+.mixing-block:hover{
+  background-image: linear-gradient(rgba(90, 9, 2, 0.5),rgb(90, 9, 2, 0.5)),url('../img/services/bg1.jpg');
+  background-size: 110% 110%;
+}
+.mastering-block:hover{
+  background-image: linear-gradient(rgba(90, 9, 2, 0.5),rgb(90, 9, 2, 0.5)),url('../img/services/bg2.jpg');
+  background-size: 110% 110%;
+}
+.academy-block:hover{
+  background-image: linear-gradient(rgba(66, 54, 2, 0.5),rgb(66, 54, 2, 0.5)),url('../img/services/marshall.jpg');
+  background-size: 110% 110%;
+}
+.acoustic-block:hover{
+  background-image: linear-gradient(rgba(92, 75, 2, 0.2),rgb(92, 75, 2, 0.2)),url('../img/services/main_carousel3.JPG');
+  background-size: 110% 110%;
+}
+.publishing-block:hover{
+  background-image: linear-gradient(rgba(2, 43, 90, 0.5),rgb(2, 43, 90, 0.5)),url('../img/services/main_carousel5.jpg');
+  background-size: 110% 110%;
+}
+.film-block:hover{
+  background-image: linear-gradient(rgba(2, 43, 90, 0.5),rgb(2, 43, 90, 0.5)),url('../img/services/services.jpg');
+  background-size: 110% 110%;
+}
+.IT-block:hover{
+  background-image: linear-gradient(rgba(2, 43, 90, 0.5),rgb(2, 43, 90, 0.5)),url('../img/services/it.jpg');
+  background-size: 110% 110%;
 }
 
-.services .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #7cc576;
-}
 
-.services .icon-box p {
-  font-size: 15px;
-  color: white;
-  margin-left: 60px;
-}
 
-.services .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
+
+
 
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-  /* background-image : linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/whyus.JPG'); */
-  background:#121212;
+  background-image : linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/services/bg2.jpg');
+  /* background:#121212; */
   background-size: cover;
   width:100%;
   
@@ -1787,6 +1849,8 @@ section {
 }
 
 .news-second-col {
+  text-align: justify;
+  text-justify: inter-word;
   width:70%;
 }
 
@@ -1819,8 +1883,7 @@ p.news-content {
   }
 
   .news-from-database { 
-    margin-left:-35px;
-
+    margin-left:-30px;
   }
 }
 

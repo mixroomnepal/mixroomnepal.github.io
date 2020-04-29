@@ -1,0 +1,46 @@
+body {
+    font-family: Futura;
+    color: rgb(81,81,81);
+}
+
+a{
+    color:rgb(188,113,0);
+}
+
+#policies {
+    background:rgb(248,248,248);
+    margin:auto;
+}
+
+#policies h4{
+    font-size:18px;
+    color:rgb(74,74,74);
+    font-weight:600;
+}
+#policies li{
+    font-size:15px;
+    color:rgb(119, 117, 117);
+    line-height: 1.9rem;
+}
+
+#policies h2{
+    color: rgb(83, 83, 83);
+    
+}
+
+.policies-container{
+    text-align:justify;
+    padding:20px 50px;
+    max-width:100%;
+    width:100%;
+}
+
+.policies-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.policies-content > div {
+    padding:5px 20px 15px 0;
+}
