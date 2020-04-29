@@ -1,0 +1,258 @@
+i{
+    padding-right:20px;
+    font-size:12px;
+}
+
+
+.mixing-cover{   
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0, 0.5)),url('../img/music_images/studio_images/marshall_big.jpg');
+    height:100%;
+}
+.mixing-cover > div{
+    padding:170px 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover-title h2{
+    font-size:100px;
+    font-weight:700;
+    color:rgb(238, 238, 238);  
+}
+.cover-title p{
+    color:whitesmoke;
+    font-weight:700;
+}
+
+/*--------------------------MIXING ENGINEERS-----------------------------------------------*/
+
+.engineers{
+    padding:10px 10px;
+}
+
+
+.engineers-title{
+    padding:80px 30px 0px 30px;
+    text-align: center;
+    color:black;
+}
+
+.engineers-title > h3{
+    font-size:35px;
+    font-weight:800;   
+}
+
+
+.mixing-engineers-div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:40px 40px;
+    height:100%;
+    justify-content:space-evenly;
+    
+}
+
+.engg-img-div > img{
+    border:10px solid whitesmoke;
+    box-shadow: 0px 0px 15px rgb(139, 139, 139);
+    width:280px;
+    height:auto;
+    border-radius:100%;  
+}
+
+.img-title{
+    text-align:center;
+    padding:10px;
+    color:rgb(255,113,13);
+    font-size:25px;
+    font-weight:1000;
+}
+
+.img-designation{
+    text-align:center;
+    padding:0px;
+    font-size:13px;
+    font-weight:600;
+    color:rgb(124, 124, 124);   
+}
+
+
+
+
+@media (max-width: 800px) {
+    .cover-title h2{
+        font-size:75px;
+        font-weight:700;    
+    }
+
+
+    .engg-img-div {
+        padding:0 10px;
+        padding-bottom:40px;
+     }
+  }
+
+@media (max-width: 600px) {
+    .cover-title h2{
+        font-size:50px;
+        font-weight:700;    
+    }
+
+  }
+  
+/*--------------------------NOTICE ENQUIRY-----------------------------------------------*/
+
+.notice-enquiry{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    border: 2px solid rgb(245,245,245);
+    padding:15px 5px 0px 5px;
+    line-height: 1rem;
+    background: rgb(245,245,245);
+    font-size:12px;
+    
+}
+
+  /*--------------------------HOW DOES IT WORK-----------------------------------------------*/
+
+
+.how-work{
+    padding:80px 0px 40px 0px;
+    text-align: center;
+    width:100%;
+}
+
+.how-work-title > h3{
+    font-size:30px;
+    font-weight:800;
+}
+
+.procedure-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding:40px 50px;
+}
+
+.procedure-div > div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.procedure-img{
+    border:1px solid rgb(245, 202, 59);
+    background: rgb(245, 202, 59);
+    border-radius: 100%;
+    padding: 10px 30px;
+    font-size:40px;
+    font-weight:800;
+    color:black;
+
+}
+
+
+.procedure > h5{
+    padding-top:14px;
+    font-size:14px;
+    color:black;
+}
+
+.procedure > p{
+    font-size:12px;
+    width:90%;
+}
+
+@media (max-width: 700px) {
+
+    .procedure-div{
+        flex-wrap: wrap;
+        padding:40px 10px;
+    }
+
+    .procedure-div > div{
+        padding:10px 0;
+    }
+
+  }
+
+
+
+    /*--------------------------SESSION FAQ-----------------------------------------------*/
+
+    .session-faq{
+        padding:0 0px 40px 0px;
+        text-align: center;
+        width:100%;
+    }
+    
+    .session-faq-title > h3{
+        font-size:30px;
+        font-weight:800;
+    }
+
+    .session-faq-section{
+        padding: 20px 0 0 200px;
+        width:100%;
+        text-align:left;
+
+       
+    }
+    
+    @media (max-width:700px) {
+        .session-faq-section{
+            padding: 20px 17px 0 20px;
+        }
+    }
+
+  
+    .accordion > div{
+        border:none;
+    }
+
+    .card-header {
+        background:none;
+    }
+
+    .btn{
+        color:rgb(143, 77, 29);
+        font-weight:700;
+        text-align: left;
+    }
+    .btn:hover, .btn:active, .btn:visited, .btn:focus{
+        text-decoration:none;
+    }
+
+    .card{
+       margin-bottom:-20px;
+    }
+
+    .card-header{
+        border-bottom: none;
+    }
+
+    .card-body{
+        padding-top:0px;
+      
+        padding-left:33px;
+        font-size:14px;
+    }
+
+    .session-faq-endinfo{
+        padding:40px 20px;
+    }

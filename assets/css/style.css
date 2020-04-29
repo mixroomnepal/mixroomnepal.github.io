@@ -624,7 +624,6 @@ display:none;
   color:white;
   letter-spacing: 0.1rem;
   display:none;
- 
 }
 
 
@@ -686,6 +685,8 @@ display:none;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
+
 
 .service-block:hover{
   cursor: pointer;
