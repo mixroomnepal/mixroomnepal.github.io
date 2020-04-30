@@ -1,6 +1,12 @@
+html,body{
+  overflow-x:hidden;
+  position: relative;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
+ 
 }
 a {
   color: #f0950e;
@@ -18,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 /*......Preloader........*/
 
 .loader-wrapper {
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -390,6 +397,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   position: relative;
   opacity:0.95;
+  overflow-x: hidden;
 }
 
 #hero .hero-container {
@@ -488,8 +496,9 @@ height:auto;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  overflow: hidden;
+  padding: 60px 2px;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .section-bg {
@@ -731,7 +740,7 @@ display:none;
 
 
 
-/*--------------------------------------------------------------
+*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
@@ -905,6 +914,33 @@ display:none;
   }
 }
 
+
+
+/*--------------------------------------------------------------
+# Image Gallery
+--------------------------------------------------------------*/
+
+.image-gallery{
+  
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px !important;
+  height: 300px !important;
+}
 
 
 

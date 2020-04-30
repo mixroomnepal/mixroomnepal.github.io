@@ -12,8 +12,18 @@ a{
 
 #faq-page{
     background:rgb(248,248,248);
-    margin:auto;
 }
+
+.faq-page > div:nth-child(1) {
+   position:absolute;
+   top:0%;
+   left:0%;
+   margin:16px;  
+}
+.faq-page > div:nth-child(2) {
+  padding:20px;
+ }
+
 
 .faq-page-title {
     text-align: center;

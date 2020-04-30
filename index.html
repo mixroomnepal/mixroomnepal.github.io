@@ -27,6 +27,9 @@
   <link href="assets/css/google-places.css" rel="stylesheet">
 
 
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
 </head>
 
 
@@ -280,6 +283,27 @@ We believe in Arts. We believe in Education. We believe in Humanity.
 
       </div>
     </section><!-- End Why Us Section -->
+
+<!-- ==============IMAGE GALLERY===============================-->
+    <div class="image-gallery">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/1.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/2.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/3.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/4.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/5.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/6.JPG')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/7.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/8.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('assets/img/gallery/9.jpg')"></div>
+        </div>
+      
+      </div>
+    </div>
+
+
+
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -960,6 +984,11 @@ We believe in Arts. We believe in Education. We believe in Humanity.
                 User Reviews</a>
               </div>
           </div>   
+
+           <!-- FAQ and POLICIES  -->
+          <br>
+           <p><a href="faq.html">FAQ</a> </p>
+           <p style="margin-top:-10px;"><a href="policies.html"> Polices and Procedures </a></p> 
         
       </div>
 
@@ -1110,6 +1139,19 @@ We believe in Arts. We believe in Education. We believe in Humanity.
   <script src="assets/js/main.js"></script>
 
 
+<script>
+
+$('.mixing-block').on('click', function() {
+    location.href = 'mixing.html'    
+});
+$('.mastering-block').on('click', function() {
+    location.href = 'mastering.html'    
+});
+ 
+</script>
+
+
+
   <!-- Review for Mix Room from Google Maps -->
    <script>    
   
@@ -1159,6 +1201,27 @@ $(document).ready(function() {
   });
   </script>
 
+
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper('.swiper-container', {
+     effect: 'coverflow',
+     loop: true,
+     grabCursor: true,
+     centeredSlides: true,
+     slidesPerView: 'auto',
+     coverflowEffect: {
+       rotate: 50,
+       stretch: 0,
+       depth: 100,
+       modifier: 1,
+       slideShadows : true,
+     },
+   });
+ </script>
 
 </body>
 
